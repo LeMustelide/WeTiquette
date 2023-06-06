@@ -1,0 +1,23 @@
+{
+  "name": "wetiquette",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeMustelide/WeTiquette.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeMustelide/WeTiquette/issues"
+  },
+  "homepage": "https://github.com/LeMustelide/WeTiquette#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "puppeteer": "^20.5.0"
+  }
+}
