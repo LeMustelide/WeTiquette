@@ -28,15 +28,23 @@
     </div>
     <div class="center">
         <form action="/pdf" method="post">
-            <label>Modele</label>
-            <input type="text" placeholder="iPhone 14 Pro" name="model">
-            <label>État</label>
-            <select name="grade">
-                <option value="1">A • Très bon état</option>
-                <option value="2">B • Bon état</option>
-                <option value="3">C • État correct</option>
-                <option value="" selected disabled hidden>Grade de l'appareil</option>
-            </select>
+            <div class="divide">
+            <div>
+                <label>Modele</label>
+                <input type="text" placeholder="iPhone 14 Pro" name="model">
+            </div>
+            <div>
+                <label>État</label>
+                <select name="grade">
+                    <option value="1">A • Très bon état</option>
+                    <option value="2">B • Bon état</option>
+                    <option value="3">C • État correct</option>
+                    <option value="" selected disabled hidden>Grade de l'appareil</option>
+                </select>
+            </div>
+            </div>
+            <div class="divide">
+            <div>
             <label>Stockage</label>
             <select name="stockage">
                 <option value="1">8 Go</option>
@@ -49,18 +57,28 @@
                 <option value="8">1 To (1000 Go)</option>
                 <option value="" selected disabled hidden>Stockage de l'appreil</option>
             </select>
+            </div>
+            <div>
             <label>OS</label>
             <select type="" placeholder="" name="OS">
                 <option value="1">iOS</option>
                 <option value="2">Android</option>
                 <option value="" selected disabled hidden>Systeme d'exploitation</option>
             </select>
+            </div>
+            </div>
             <label>Débit d'abstoption spécifique</label>
             <input type="number" min="0" max="10" step="0.1" placeholder="DAS en W/kg" name="DAS">
+            <div class="divide">
+            <div>
             <label>Prix du neuf</label>
             <input type="number" min="0" placeholder="469€" name="PrixNeuf">
+            </div>
+            <div>
             <label>Prix</label>
             <input type="number" min="0" placeholder="229€" name="Prix">
+            </div>
+            </div>
             <div class="center">
                 <input class="neutral-btn" type="submit" value="Génerer mes étiquettes !">
             </div>

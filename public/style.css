@@ -43,9 +43,16 @@ body {
   text-align: center;
 }
 
+.divide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
 form {
-  min-width: 35%;
-  max-width: 75%;
+  width: 32rem;
 }
 
 /* ✧ Typographies ✧ */
@@ -53,6 +60,7 @@ form {
 label {
   font-size: 1rem;
   color: #ffffff;
+  animation: popup 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 h1 {
@@ -88,6 +96,7 @@ select {
   border-width: 0px;
   font-family: 'Montserrat', sans-serif;
   color: white;
+  animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 select {
@@ -122,6 +131,7 @@ button {
 
 input {
   all: unset;
+  animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .neutral-btn {
@@ -141,6 +151,22 @@ input {
   box-shadow: #ed6c05 0px 0px 10px;
   transition-duration: 2s;
   background: #fa8f15;
+}
+
+/* ✧ Extras ✧ */
+
+@keyframes popup {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 /* ✧ Jessy Robin & Marc Virgili ✧ */
