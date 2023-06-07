@@ -92,7 +92,7 @@ a {
   text-decoration: none;
 }
 
-/* ✧ Inputs & Boutons✧ */
+/* ✧ Inputs & Boutons ✧ */
 
 input[type='text'],
 input[type='number'],
@@ -153,7 +153,7 @@ input {
   background: #ed6c05;
   transition-property: background-color, background, box-shadow;
   transition-duration: 2s;
-  animation: popup 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  animation: popup 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .neutral-btn:hover {
@@ -161,6 +161,42 @@ input {
   box-shadow: #ed6c05 0px 0px 10px;
   transition-duration: 2s;
   background: #fa8f15;
+}
+
+.saved {
+  background: rgba(54, 54, 54, 0.336);
+  color: #ffffff;
+  border-radius: 16px;
+  margin: 2%;
+  text-align: center;
+  padding: 15px;
+  width: 7rem;
+  backdrop-filter: blur(10px);
+  --card-color: linear-gradient(270deg, rgb(255, 94, 0) 0%, rgb(255, 145, 0) 100%);
+}
+.saved::before {
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  filter: blur(25px);
+  background: var(--card-color);
+  z-index: -2;
+  opacity: 0%;
+  transition: opacity 1s ease-in-out;
+  background-size: 400%;
+}
+.saved:hover::before {
+  animation: gradient 5s linear infinite;
+  opacity: 15%;
+  transition: opacity 1s ease-in-out;
+}
+
+.preview{
+  height: 5rem;
+  transition: transform 0.2s ease-out;
 }
 
 /* ✧ Extras ✧ */
