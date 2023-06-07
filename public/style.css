@@ -61,6 +61,14 @@ body {
   gap: 1rem;
 }
 
+.divide div:nth-child(1) {
+  width: 60%;
+}
+
+.divide div:nth-child(2) {
+  width: 40%;
+}
+
 form {
   max-width: 32rem;
 }

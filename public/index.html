@@ -33,12 +33,12 @@
           <div>
             <label>État</label>
             <select name="grade">
-              <option value="Très bon état">A • Très bon état</option>
-              <option value="Bon état">B • Bon état</option>
-              <option value="État correct">C • État correct</option>
               <option value="" selected disabled hidden>
                 Grade de l'appareil
               </option>
+              <option value="Très bon état">A • Très bon état</option>
+              <option value="Bon état">B • Bon état</option>
+              <option value="État correct">C • État correct</option>
             </select>
           </div>
         </div>
@@ -46,6 +46,9 @@
           <div>
             <label>Stockage</label>
             <select name="stockage">
+              <option value="" selected disabled hidden>
+                Stockage de l'appreil
+              </option>
               <option value="8 Go">8 Go</option>
               <option value="16 Go">16 Go</option>
               <option value="32 Go">32 Go</option>
@@ -54,19 +57,16 @@
               <option value="256 Go">256 Go</option>
               <option value="512 Go">512 Go</option>
               <option value="1 To">1 To (1000 Go)</option>
-              <option value="" selected disabled hidden>
-                Stockage de l'appreil
-              </option>
             </select>
           </div>
           <div>
             <label>OS</label>
             <select type="" placeholder="" name="OS">
-              <option value="iOS">iOS</option>
-              <option value="Android">Android</option>
               <option value="" selected disabled hidden>
                 Systeme d'exploitation
               </option>
+              <option value="iOS">iOS</option>
+              <option value="Android">Android</option>
             </select>
           </div>
         </div>
@@ -75,7 +75,7 @@
           type="number"
           min="0"
           max="10"
-          step="0.1"
+          step="0.01"
           placeholder="DAS en W/kg"
           name="DAS"
         />
