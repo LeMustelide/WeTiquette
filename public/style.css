@@ -61,6 +61,14 @@ body {
   gap: 1rem;
 }
 
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
 form {
   max-width: 32rem;
 }
@@ -167,12 +175,12 @@ input {
   background: rgba(54, 54, 54, 0.336);
   color: #ffffff;
   border-radius: 16px;
-  margin: 2%;
+  margin: 1rem;
   text-align: center;
   padding: 15px;
-  width: 7rem;
+  width: 10rem;
   backdrop-filter: blur(10px);
-  --card-color: linear-gradient(270deg, rgb(255, 94, 0) 0%, rgb(255, 145, 0) 100%);
+  animation: popup 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .saved::before {
   content: '';
@@ -185,7 +193,7 @@ input {
   background: var(--card-color);
   z-index: -2;
   opacity: 0%;
-  transition: opacity 1s ease-in-out;
+  transition: opacity s ease-in-out;
   background-size: 400%;
 }
 .saved:hover::before {
