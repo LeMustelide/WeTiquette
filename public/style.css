@@ -62,7 +62,7 @@ body {
 }
 
 form {
-  width: 32rem;
+  max-width: 32rem;
 }
 
 /* ✧ Typographies ✧ */
