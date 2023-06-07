@@ -1,0 +1,24 @@
+<head>
+  <link rel="stylesheet" href="http://localhost:3000/ticket.css" />
+</head>
+
+<body>
+  <div class="ticket-list">
+    <% for (let i = 0; i < 9; i++) { %>
+    <div class="ticket">
+      <p class="model gradient"><%= model %></p>
+      <p class="grade gradient"><%= grade %></p>
+      <p class="stockage"><%= stockage %></p>
+      <p class="os">Système d'exploitation : <%= OS %></p>
+      <p class="das">DAS : <%= DAS %> W/kg</p>
+      <p class="price-new"><%= PrixNeuf %>€</p>
+      <span class="price">
+        <div>
+          <p class="gradient"><%= Prix %>€</p>
+          <p>TTC</p>
+        </div>
+      </span>
+    </div>
+    <% } %>
+  </div>
+</body>

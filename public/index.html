@@ -24,7 +24,7 @@
     <!-- Base -->
     <div class="center main">
       <h1>Reconditionné</h1>
-      <form action="/pdf" method="post">
+      <form action="/generate-pdf" method="post">
         <div class="divide">
           <div>
             <label>Modele</label>
@@ -33,9 +33,9 @@
           <div>
             <label>État</label>
             <select name="grade">
-              <option value="1">A • Très bon état</option>
-              <option value="2">B • Bon état</option>
-              <option value="3">C • État correct</option>
+              <option value="Très bon état">A • Très bon état</option>
+              <option value="Bon état">B • Bon état</option>
+              <option value="État correct">C • État correct</option>
               <option value="" selected disabled hidden>
                 Grade de l'appareil
               </option>
@@ -46,14 +46,14 @@
           <div>
             <label>Stockage</label>
             <select name="stockage">
-              <option value="1">8 Go</option>
-              <option value="2">16 Go</option>
-              <option value="3">32 Go</option>
-              <option value="4">64 Go</option>
-              <option value="5">128 Go</option>
-              <option value="6">256 Go</option>
-              <option value="7">512 Go</option>
-              <option value="8">1 To (1000 Go)</option>
+              <option value="8 Go">8 Go</option>
+              <option value="16 Go">16 Go</option>
+              <option value="32 Go">32 Go</option>
+              <option value="64 Go">64 Go</option>
+              <option value="128 Go">128 Go</option>
+              <option value="256 Go">256 Go</option>
+              <option value="512 Go">512 Go</option>
+              <option value="1 To">1 To (1000 Go)</option>
               <option value="" selected disabled hidden>
                 Stockage de l'appreil
               </option>
@@ -62,8 +62,8 @@
           <div>
             <label>OS</label>
             <select type="" placeholder="" name="OS">
-              <option value="1">iOS</option>
-              <option value="2">Android</option>
+              <option value="iOS">iOS</option>
+              <option value="Android">Android</option>
               <option value="" selected disabled hidden>
                 Systeme d'exploitation
               </option>
