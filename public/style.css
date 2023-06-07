@@ -93,7 +93,6 @@ select {
   box-sizing: border-box;
   background: rgb(65, 65, 65);
   border-radius: 8px;
-  border-width: 0px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
@@ -144,6 +143,7 @@ input {
   background: #ed6c05;
   transition-property: background-color, background, box-shadow;
   transition-duration: 2s;
+  animation: popup 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
 .neutral-btn:hover {
