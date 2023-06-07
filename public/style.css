@@ -7,7 +7,6 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-
 /* ✧ Bases ✧ */
 
 html {
@@ -23,7 +22,19 @@ body {
   min-height: 100vh;
   height: 100%;
   perspective: 500px;
-  background: url("img/wefixlarge.png") center center / cover no-repeat fixed;
+  background: url('img/wefixlarge.png') center center / cover no-repeat fixed;
+}
+
+.logo {
+  height: 64px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
 }
 
 .center {
@@ -45,7 +56,6 @@ body {
 
 .divide {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -68,12 +78,12 @@ h1 {
   color: #ffffff;
 }
 
-
 p {
   font-size: 15px;
   color: #b9b9b9;
   line-height: 1.6;
   font-weight: 300;
+  margin: 0;
 }
 
 a {
@@ -84,8 +94,8 @@ a {
 
 /* ✧ Inputs & Boutons✧ */
 
-input[type=text],
-input[type=number],
+input[type='text'],
+input[type='number'],
 select {
   width: 100%;
   padding: 12px;

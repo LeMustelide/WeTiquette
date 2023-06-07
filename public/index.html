@@ -1,93 +1,108 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
+  <head>
     <title>WeTiquettes</title>
     <!-- Meta et autre -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:image" content="/img/WeFixLockscreenJessyMac.png">
-    <link rel="apple-touch-icon" sizes="128x128" href="img/wefixappicon.png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="twitter:image" content="/img/WeFixLockscreenJessyMac.png" />
+    <link rel="apple-touch-icon" sizes="128x128" href="img/wefixappicon.png" />
     <!-- Style -->
     <meta name="theme-color" content="#ed6c05" />
-    <link href="img/logowefix.png" rel="shortcut icon">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link href="img/logowefix.png" rel="shortcut icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <div class="center header">
-        <a href="https://wefix.net/reparation/smartphone" target="_blank">
-            <img style="height:60px;" src="img/largefixwe.png">
-        </a>
-        <p style="margin-bottom: 0px;margin-top: 0px;">Créateurs d'étiquettes</p>
+      <a href="https://wefix.net/reparation/smartphone" target="_blank">
+        <img class="logo" src="img/largefixwe.png" alt="logo" />
+      </a>
+      <p>Créateurs d'étiquettes</p>
     </div>
     <!-- Base -->
-    <div class="center" style="margin-top: 20px;padding-bottom: 0px; text-align: center;">
-        <h1>Reconditionné</h1>
-    </div>
-    <div class="center">
-        <form action="/pdf" method="post">
-            <div class="divide">
-            <div>
-                <label>Modele</label>
-                <input type="text" placeholder="iPhone 14 Pro" name="model">
-            </div>
-            <div>
-                <label>État</label>
-                <select name="grade">
-                    <option value="1">A • Très bon état</option>
-                    <option value="2">B • Bon état</option>
-                    <option value="3">C • État correct</option>
-                    <option value="" selected disabled hidden>Grade de l'appareil</option>
-                </select>
-            </div>
-            </div>
-            <div class="divide">
-            <div>
+    <div class="center main">
+      <h1>Reconditionné</h1>
+      <form action="/pdf" method="post">
+        <div class="divide">
+          <div>
+            <label>Modele</label>
+            <input type="text" placeholder="iPhone 14 Pro" name="model" />
+          </div>
+          <div>
+            <label>État</label>
+            <select name="grade">
+              <option value="1">A • Très bon état</option>
+              <option value="2">B • Bon état</option>
+              <option value="3">C • État correct</option>
+              <option value="" selected disabled hidden>
+                Grade de l'appareil
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="divide">
+          <div>
             <label>Stockage</label>
             <select name="stockage">
-                <option value="1">8 Go</option>
-                <option value="2">16 Go</option>
-                <option value="3">32 Go</option>
-                <option value="4">64 Go</option>
-                <option value="5">128 Go</option>
-                <option value="6">256 Go</option>
-                <option value="7">512 Go</option>
-                <option value="8">1 To (1000 Go)</option>
-                <option value="" selected disabled hidden>Stockage de l'appreil</option>
+              <option value="1">8 Go</option>
+              <option value="2">16 Go</option>
+              <option value="3">32 Go</option>
+              <option value="4">64 Go</option>
+              <option value="5">128 Go</option>
+              <option value="6">256 Go</option>
+              <option value="7">512 Go</option>
+              <option value="8">1 To (1000 Go)</option>
+              <option value="" selected disabled hidden>
+                Stockage de l'appreil
+              </option>
             </select>
-            </div>
-            <div>
+          </div>
+          <div>
             <label>OS</label>
             <select type="" placeholder="" name="OS">
-                <option value="1">iOS</option>
-                <option value="2">Android</option>
-                <option value="" selected disabled hidden>Systeme d'exploitation</option>
+              <option value="1">iOS</option>
+              <option value="2">Android</option>
+              <option value="" selected disabled hidden>
+                Systeme d'exploitation
+              </option>
             </select>
-            </div>
-            </div>
-            <label>Débit d'abstoption spécifique</label>
-            <input type="number" min="0" max="10" step="0.1" placeholder="DAS en W/kg" name="DAS">
-            <div class="divide">
-            <div>
+          </div>
+        </div>
+        <label>Débit d'abstoption spécifique</label>
+        <input
+          type="number"
+          min="0"
+          max="10"
+          step="0.1"
+          placeholder="DAS en W/kg"
+          name="DAS"
+        />
+        <div class="divide">
+          <div>
             <label>Prix du neuf</label>
-            <input type="number" min="0" placeholder="469€" name="PrixNeuf">
-            </div>
-            <div>
+            <input type="number" min="0" placeholder="469€" name="PrixNeuf" />
+          </div>
+          <div>
             <label>Prix</label>
-            <input type="number" min="0" placeholder="229€" name="Prix">
-            </div>
-            </div>
-            <div class="center">
-                <input class="neutral-btn" type="submit" value="Génerer mes étiquettes !">
-            </div>
-        </form>
+            <input type="number" min="0" placeholder="229€" name="Prix" />
+          </div>
+        </div>
+        <div class="center">
+          <input
+            class="neutral-btn"
+            type="submit"
+            value="Génerer mes étiquettes !"
+          />
+        </div>
+      </form>
     </div>
-</body>
-<div class="center" style="padding-bottom:1%;">
-    <p style="margin-bottom: 0px;margin-top: 0px;"><br>Réalisé avec 🧡 par <a
-            href="https://lykos.vortexdev.fr">Jess'</a> du 4502</p>
-</div>
-
+  </body>
+  <div class="center">
+    <p>
+      Réalisé avec 🧡 par
+      <a href="https://lykos.vortexdev.fr">Jess'</a> du 4502
+    </p>
+  </div>
 </html>
