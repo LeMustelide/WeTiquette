@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 async function generatePdfFromHtml(html) {
   const browser = await puppeteer.launch({
-    executablePath: '/usr/bin/google-chrome',
+    executablePath: '/usr/bin/google-chrome', // disable in dev
     headless: true,
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });

@@ -41,11 +41,16 @@
         <div class="divide">
           <div>
             <label>Modele</label>
-            <input type="text" placeholder="iPhone 14 Pro" name="model" />
+            <input
+              type="text"
+              placeholder="iPhone 14 Pro"
+              name="model"
+              required
+            />
           </div>
           <div>
             <label>État</label>
-            <select name="grade">
+            <select name="grade" required>
               <option value="" selected disabled hidden>
                 Grade de l'appareil
               </option>
@@ -58,7 +63,7 @@
         <div class="divide">
           <div>
             <label>Stockage</label>
-            <select name="stockage">
+            <select name="stockage" required>
               <option value="" selected disabled hidden>
                 Stockage de l'appreil
               </option>
@@ -74,7 +79,7 @@
           </div>
           <div>
             <label>OS</label>
-            <select type="" placeholder="" name="OS">
+            <select type="" placeholder="" name="OS" required>
               <option value="" selected disabled hidden>
                 Systeme d'exploitation
               </option>
@@ -91,15 +96,28 @@
           step="0.01"
           placeholder="DAS en W/kg"
           name="DAS"
+          required
         />
         <div class="divide">
           <div>
             <label>Prix du neuf</label>
-            <input type="number" min="0" placeholder="469€" name="PrixNeuf" />
+            <input
+              type="number"
+              min="0"
+              placeholder="469€"
+              name="PrixNeuf"
+              required
+            />
           </div>
           <div>
             <label>Prix</label>
-            <input type="number" min="0" placeholder="229€" name="Prix" />
+            <input
+              type="number"
+              min="0"
+              placeholder="229€"
+              name="Prix"
+              required
+            />
           </div>
         </div>
         <div class="center">
