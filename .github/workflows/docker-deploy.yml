@@ -12,18 +12,16 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Setup OpenVPN
-      uses: dbritto-dev/openvpn3-action@main
+    - name: Deploy to server
+      uses: appleboy/ssh-action@master
       with:
-        vpn-client-config: ${{ secrets.OVPN_CONFIG }}
+        host: ${{ secrets.SERVER_HOST }}
+        username: ${{ secrets.SERVER_USERNAME }}
+        password : ${{ secrets.SERVER_PASSWORD }}
         script: |
-          sudo apt-get update
-          sudo apt-get install -y openssh-client sshpass
-          sshpass -p ${{ secrets.SERVER_PASSWORD }} ssh -o StrictHostKeyChecking=no ${{ secrets.SERVER_USERNAME }}@${{ secrets.SERVER_HOST }} "
-            cd /path/to/your/project
-            git pull
-            docker build -t wetiquette .
-            docker stop WeTiquette
-            docker rm WeTiquette
-            docker run -d --name WeTiquette wetiquette
-          "
+          cd /home/docker-project/WeTiquette
+          git pull
+          docker build -t wetiquette .
+          docker stop wetiquette
+          docker rm wetiquette
+          docker run -p 3000:3000 -d wetiquette
