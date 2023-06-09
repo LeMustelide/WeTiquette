@@ -12,12 +12,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Build Docker image
-      run: docker build -t wetiquette-image .
-
-    - name: Push Docker image
-      run: docker push wetiquette-image
-
     - name: Deploy to server
       uses: appleboy/ssh-action@master
       with:
@@ -25,7 +19,9 @@ jobs:
         username: ${{ secrets.SERVER_USERNAME }}
         key: ${{ secrets.SERVER_SSH_KEY }}
         script: |
-          docker pull wetiquette-image
+          cd /home/docker-project/WeTiquette
+          git pull
+          docker build -t wetiquette .
           docker stop WeTiquette
           docker rm WeTiquette
-          docker run -d --name WeTiquette wetiquette-image
+          docker run -d --name WeTiquette wetiquette
