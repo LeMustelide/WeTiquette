@@ -24,4 +24,4 @@ jobs:
           docker build -t wetiquette .
           docker stop WeTiquette
           docker rm WeTiquette
-          docker run -p 3000:3000 -d WeTiquette
+          docker run -p 3000:3000 -d wetiquette
