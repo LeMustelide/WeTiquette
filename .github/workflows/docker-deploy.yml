@@ -21,7 +21,7 @@ jobs:
         script: |
           cd /home/docker-project/WeTiquette
           git pull
-          docker build -t wetiquette .
-          docker stop wetiquette
-          docker rm wetiquette
-          docker run -p 3000:3000 -d wetiquette
+          docker build -t WeTiquette .
+          docker stop WeTiquette
+          docker rm WeTiquette
+          docker run -p 3000:3000 -d WeTiquette
