@@ -29,4 +29,4 @@ COPY . .
 EXPOSE 3000
 
 # Commande pour démarrer l'application
-CMD [ "pm2", "start" ]
+CMD [ "pm2-runtime", "start", "server.js" ]
