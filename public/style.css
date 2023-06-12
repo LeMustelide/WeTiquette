@@ -1,3 +1,5 @@
+/* ✧ Jessy Robin & Marc Virgili ✧ */
+
 /* ✧ Import ✧ */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -61,6 +63,14 @@ body {
   gap: 1rem;
 }
 
+.divide div:nth-child(1) {
+  width: 60%;
+}
+
+.divide div:nth-child(2) {
+  width: 40%;
+}
+
 .line {
   display: flex;
   justify-content: center;
@@ -109,16 +119,35 @@ select {
   padding: 12px;
   margin: 8px 0;
   box-sizing: border-box;
-  background: rgb(65, 65, 65);
+  background: #414141;
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-appearance: none;
+  border-color: #00000000;
+}
+select {
+  border-width: 0px;
+  height: 43px;
+  background-image: url(img/expand.svg);
+  background-repeat: no-repeat;
+  background-position : right;
+  border-width: 1px;
+  padding-right: 25px;
+  border-color: #414141;
+  -webkit-appearance: none;
 }
 
-select {
-  border-right-width: 1rem;
-  border-color: #00000000;
+select:focus {
+  background-image: url(img/expand_less.svg);
+}
+
+input:focus-visible[type='text'],
+input:focus-visible[type='number'],
+select:focus-visible {
+  outline: none;
+  -webkit-appearance: none;
 }
 
 button {
@@ -128,6 +157,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  
 }
 
 .cancel-btn {
@@ -148,6 +178,7 @@ button {
 
 input {
   all: unset;
+  -webkit-appearance: none;
   animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 

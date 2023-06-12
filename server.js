@@ -45,4 +45,4 @@ app.post('/generate-pdf', async function (req, res) {
 });
 
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3000, () => console.log("Ctrl+Clic sur http://localhost:3000"));

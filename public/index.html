@@ -21,7 +21,7 @@
       </a>
       <p>Créateurs d'étiquettes</p>
     </div>
-    <!-- Original -->
+    <!-- Prefabs 
     <div class="main">
       <h1>Préfabriquées</h1>
     <div class="center line main">
@@ -58,6 +58,9 @@
         <p href="#">Samsung S20</p>
       </div>
     </div>
+
+    -->
+
     <!-- Custom -->
     <div class="center main">
       <h1>Personnalisées</h1>
@@ -65,24 +68,27 @@
         <div class="divide">
           <div>
             <label>Modele</label>
-            <input type="text" placeholder="iPhone 14 Pro" name="model" />
+            <input type="text" placeholder="iPhone 14 Pro" name="model" required />
           </div>
           <div>
             <label>État</label>
-            <select name="grade">
+            <select name="grade" required>
+              <option value="Neuf" selected disabled hidden>
+                Grade de l'appareil
+              </option>
               <option value="Très bon état">A • Très bon état</option>
               <option value="Bon état">B • Bon état</option>
               <option value="État correct">C • État correct</option>
-              <option value="" selected disabled hidden>
-                Grade de l'appareil
-              </option>
             </select>
           </div>
         </div>
         <div class="divide">
           <div>
             <label>Stockage</label>
-            <select name="stockage">
+            <select name="stockage" required >
+              <option value="1 octet" selected disabled hidden>
+                Stockage de l'appareil
+              </option>
               <option value="8 Go">8 Go</option>
               <option value="16 Go">16 Go</option>
               <option value="32 Go">32 Go</option>
@@ -91,24 +97,21 @@
               <option value="256 Go">256 Go</option>
               <option value="512 Go">512 Go</option>
               <option value="1 To">1 To (1000 Go)</option>
-              <option value="" selected disabled hidden>
-                Stockage de l'appreil
-              </option>
             </select>
           </div>
           <div>
             <label>OS</label>
-            <select type="" placeholder="" name="OS">
-              <option value="iOS">iOS</option>
-              <option value="Android">Android</option>
-              <option value="" selected disabled hidden>
+            <select type="" placeholder="" name="OS" required >
+              <option value="Windows Mobile" selected disabled hidden>
                 Systeme d'exploitation
               </option>
+              <option value="iOS">iOS</option>
+              <option value="Android">Android</option>
             </select>
           </div>
         </div>
         <label>Débit d'abstoption spécifique</label>
-        <input
+        <input required
           type="number"
           min="0"
           max="10"
@@ -119,11 +122,11 @@
         <div class="divide">
           <div>
             <label>Prix du neuf</label>
-            <input type="number" min="0" placeholder="469€" name="PrixNeuf" />
+            <input type="number" min="0" placeholder="469€" name="PrixNeuf" required />
           </div>
           <div>
             <label>Prix</label>
-            <input type="number" min="0" placeholder="229€" name="Prix" />
+            <input type="number" min="0" placeholder="229€" name="Prix" required />
           </div>
         </div>
         <div class="center">
@@ -139,7 +142,7 @@
   <div class="center">
     <p>
       Réalisé avec 🧡 par
-      <a href="https://lykos.vortexdev.fr">Jess'</a> du 4502
+      <a href="https://wefixnet.workplace.com/profile.php?id=100087582330774" target="_blank">Jess'</a> du 4502
     </p>
   </div>
 </html>

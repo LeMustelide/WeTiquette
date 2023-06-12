@@ -15,4 +15,4 @@ app.get('/pdf', async (req, res) => {
     res.send(pdf);
 });
 
-app.listen(3000, () => console.log('Server running on port 3000'));
+app.listen(3000, () => console.log('ctrl+clic sur http://localhost:3000'));
