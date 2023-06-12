@@ -1,3 +1,5 @@
+/* ✧ Jessy Robin & Marc Virgili ✧ */
+
 /* ✧ Import ✧ */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
@@ -69,6 +71,14 @@ body {
   width: 40%;
 }
 
+.line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+
 form {
   max-width: 32rem;
 }
@@ -109,16 +119,34 @@ select {
   padding: 12px;
   margin: 8px 0;
   box-sizing: border-box;
-  background: rgb(65, 65, 65);
+  background: #414141;
   border-radius: 8px;
   font-family: 'Montserrat', sans-serif;
   color: white;
   animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  -webkit-appearance: none;
+  border-color: #00000000;
+}
+select {
+  border-width: 0px;
+  height: 43px;
+  background-image: url(img/expand.svg);
+  background-repeat: no-repeat;
+  background-position : right;
+  padding-right: 25px;
+  border-color: #414141;
+  -webkit-appearance: none;
 }
 
-select {
-  border-right-width: 1rem;
-  border-color: #00000000;
+select:focus {
+  background-image: url(img/expand_less.svg);
+}
+
+input:focus-visible[type='text'],
+input:focus-visible[type='number'],
+select:focus-visible {
+  outline: none;
+  -webkit-appearance: none;
 }
 
 button {
@@ -128,6 +156,7 @@ button {
   border: none;
   cursor: pointer;
   width: 100%;
+  
 }
 
 .cancel-btn {
@@ -148,6 +177,7 @@ button {
 
 input {
   all: unset;
+  -webkit-appearance: none;
   animation: popup 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
@@ -175,12 +205,12 @@ input {
   background: rgba(54, 54, 54, 0.336);
   color: #ffffff;
   border-radius: 16px;
-  margin: 2%;
+  margin: 1rem;
   text-align: center;
   padding: 15px;
-  width: 7rem;
+  width: 10rem;
   backdrop-filter: blur(10px);
-  --card-color: linear-gradient(270deg, rgb(255, 94, 0) 0%, rgb(255, 145, 0) 100%);
+  animation: popup 0.9s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .saved::before {
   content: '';
@@ -193,7 +223,7 @@ input {
   background: var(--card-color);
   z-index: -2;
   opacity: 0%;
-  transition: opacity 1s ease-in-out;
+  transition: opacity s ease-in-out;
   background-size: 400%;
 }
 .saved:hover::before {
