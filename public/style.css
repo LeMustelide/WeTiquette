@@ -133,7 +133,6 @@ select {
   background-image: url(img/expand.svg);
   background-repeat: no-repeat;
   background-position : right;
-  border-width: 1px;
   padding-right: 25px;
   border-color: #414141;
   -webkit-appearance: none;
